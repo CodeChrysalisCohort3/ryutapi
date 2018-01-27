@@ -7,6 +7,19 @@ module.exports = (services) => {
     .then(students => {
       return res.status(200).json(students)
     })
-    .catch(err => res.status(400).send(err.message)));
+    .catch(err => res.status(400).send(err.message))
+  );
+
+  router.post('', (req, res) => services.db.students.create(
+    {
+      name: req.body.name,
+      status: req.body.status
+    })
+    .then(students => res.status(201).json(students.serialize))
+    .catch((err) => {
+      return respone.status(400).send(err.message);
+    })
+  );
+
   return router;
 }
