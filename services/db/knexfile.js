@@ -2,7 +2,7 @@ module.exports = {
   client: 'pg',
   connection: {
       host: '127.0.0.1',
-      database: 'ryutapi'
+      database: 'ryutapi',
   },
   port: 5000,
   pool: {
