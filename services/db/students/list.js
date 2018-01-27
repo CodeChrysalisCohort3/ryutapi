@@ -5,9 +5,7 @@ module.exports = (knex, Studnet) => {
       .then(studentList => {
         return studentList.map(student => {
           return new Student(studnet);
-        })
-      })
-
-  }
-
-}
+        });
+      });
+  };
+};
