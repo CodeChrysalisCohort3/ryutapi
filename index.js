@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.json({ type: 'application/json', limit: '50mb' }));
 
 app.use('/api', apiRouter);
-app.use(express.static(`${__dirname}/public`));
+app.use(express.static(`${__dirname}/client`));
 
 app.use((err, req, res, next) => {
   if (err.stack) {

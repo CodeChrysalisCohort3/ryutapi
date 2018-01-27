@@ -4,6 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/CodeChrysalisCohort3/ryutapi.git",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "add": "^2.0.6",
     "bluebird": "^3.5.1",
