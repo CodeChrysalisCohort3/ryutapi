@@ -1,0 +1,18 @@
+{
+  "name": "ryutapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CodeChrysalisCohort3/ryutapi.git",
+  "license": "MIT",
+  "dependencies": {
+    "add": "^2.0.6",
+    "express": "^4.16.2",
+    "knex": "^0.14.2",
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.16.0",
+    "mocha": "^5.0.0"
+  }
+}
