@@ -17,5 +17,8 @@ class Student {
 module.exports = (knex) => {
   return {
     list: require('./list')(knex, Student),
+    create: require('./create')(knex, Student),
+    remove: require('./remove')(knex, Student),
+    update: require('./update')(knex, Student),
   };
 };
