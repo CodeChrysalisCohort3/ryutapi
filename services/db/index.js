@@ -11,6 +11,6 @@ module.exports = (config) => {
   });
 
   return {
-    student: require('./students')(knex)
+    students: require('./students')(knex)
   };
 }

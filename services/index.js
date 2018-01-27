@@ -9,6 +9,5 @@ module.exports = (config) => {
       services[fileName] = require(`${__dirname}/${fileName}`)(config[fileName]);
     }
   });
-  console.log("#################",services.logger.log)
   return services;
 };
