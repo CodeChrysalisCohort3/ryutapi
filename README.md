@@ -1,5 +1,22 @@
 # ryutapi
-Solo Project creating CRUD app
+Solo Project creating CRUD application
 
+## Setup
+### Dependencies
+Run this code
+```
 yarn install
-echo CREATE DATABASE ryutapi | psql
+```
+### Database
+Run this code to creat database
+```
+echo CREATE DATABASE ccemergence | psql
+```
+Run this code to run migrattion files
+```
+yarn migrate
+```
+Run this code to rollback
+```
+yarn rollback
+```
