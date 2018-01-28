@@ -3,8 +3,47 @@
 <html>
   <head>
     <title> RyutApi</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <h1>RyutApi</h1>
+    <form id="add" name="add">
+      <label for="namae" accesskey="n">Name:</label>
+      <input type="text" name="name">
+      Status:<input type="radio" name="status" value="larva">
+      <label for="larva" accesskey="l">Larva</label>
+      <input type="radio" name="status" value="chrysalis">
+      <label for="chrysalis" accesskey="c">Chrysalis</label>
+      <input type="radio" name="status" value="butterfly">
+      <label for="chrysalis" accesskey="c">Butterfly</label>
+      <input type="submit" value="add">
+    </form>
+    <form id="update" name="update">
+      <label for="namae" accesskey="n">Name:</label>
+      <input type="text" name="name">
+      Status:<input type="radio" name="status" value="larva">
+      <label for="larva" accesskey="l">Larva</label>
+      <input type="radio" name="status" value="chrysalis">
+      <label for="chrysalis" accesskey="c">Chrysalis</label>
+      <input type="radio" name="status" value="butterfly">
+      <label for="chrysalis" accesskey="c">Butterfly</label>
+      <input type="submit" value="update">
+    </form>
+    <form id="delete" name="delete">
+      <label for="namae" accesskey="n">Name:</label>
+      <input type="text" name="name">
+      <input type="submit" value="delete">
+    </form>
+    <div class="container">
+      <table id="students">
+        <tr>
+          <td>ID</td>
+          <td>NAME</td>
+          <td>STATUS</td>
+        </tr>
+        </table>
+    </div>
   </body>
+
 </html>
